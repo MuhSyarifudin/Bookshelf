@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shelf</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon/books.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <header>
+        <div class="brand row">
+          <img
+            src="assets/img/brand/books.png"
+            alt=""
+            width="48px"
+            height="50px"
+          />
+          <h3 class="app-title mt-3 ml-2">Book Shelf</h3>
+        </div>
+        <form>
+          <div class="form-inline justify-content-center mb-2">
+            <div class="form-inline col-md-9 switch-button-container">
+              <label class="btn-switch btn active" for="finished-read">
+                <input
+                  type="radio"
+                  checked
+                  class="selector-menu"
+                  name="shelf-selector"
+                  value="Selesai Dibaca"
+                  id="finished-read"
+                />
+                <div>Selesai Dibaca</div>
+              </label>
+              <label class="btn-switch btn" for="unfinished-read">
+                <input
+                  type="radio"
+                  class="selector-menu"
+                  name="shelf-selector"
+                  value="Belum selesai Dibaca"
+                  id="unfinished-read"
+                />
+                <div>Belum Selesai Dibaca</div>
+              </label>
+            </div>
+          </div>
+          <div class="form-inline justify-content-center">
+            <label class="form-control col-lg-7 mr-1 search-input-container">
+              <span><i class="fas fa-search mr-1"></i></span>
+              <input
+                type="search"
+                name=""
+                placeholder="Cari berdasarkan judul"
+                class="search-input"
+                id="search-input"
+              />
+            </label>
+            <input
+              type="button"
+              id="tambah"
+              class="btn btn-tambah btn-md"
+              value="Tambah buku"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            />
+          </div>
+          <div class="form-inline justify-content-center">
+            <div id="alert-container"></div>
+          </div>
+        </form>
+      </header>
+      <main>
+        <div class="container book-shelf mt-2 col-md-9">
+          <ul id="book-list"></ul>
+        </div>
+        <div class="hidden" id="modal-container"></div>
+      </main>
+      <footer>&copy; Copyright (C) 2022. Created By Muhamad Syarifudin</footer>
+    </div>
+  </body>
+  <script type="module" src="assets/js/index.js"></script>
+</html>

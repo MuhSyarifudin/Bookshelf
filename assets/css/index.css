@@ -64,6 +64,12 @@ body {
   cursor: text;
 }
 
+#book-list.no-book {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
 .btn-switch {
   border: 0;
   background-color: white;

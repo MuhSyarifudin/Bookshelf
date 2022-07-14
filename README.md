@@ -13,7 +13,7 @@ this application was another version made using bootstrap.4.0 form github reposi
 
 # Get Started
 
-Because it's use a ES Module so please use a live-server, you can use node js live-server or VS Code extension live-server. please follow the below instruction to run the App.
+Because it's use an ES Module so please use a live-server, you can use node js live-server or VS Code extension live-server. please follow the below instruction to run the App.
 
 ```
 #Clone

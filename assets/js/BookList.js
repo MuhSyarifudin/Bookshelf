@@ -3,6 +3,7 @@ class BookList {
   #books;
   #noBookMessage;
   #bookListElement = document.getElementById("book-list");
+  #bookShelfElement = document.getElementById("book-shelf");
   constructor(books, noBookMessage) {
     this.#books = books;
     this.#noBookMessage = noBookMessage;
@@ -11,6 +12,7 @@ class BookList {
     if (this.#bookListElement) {
       if (this.#books.length > 0) {
         this.#bookListElement.classList.remove("no-book");
+        this.#bookShelfElement.classList.remove("no-item");
         const list = this.#books
           .map((book) => {
             return `
@@ -43,6 +45,7 @@ class BookList {
         this.#actionHandler();
       } else {
         this.#bookListElement.classList.add("no-book");
+        this.#bookShelfElement.classList.add("no-item");
         this.#bookListElement.innerHTML = `
           <p class="message">${this.#noBookMessage}</p>
         `;

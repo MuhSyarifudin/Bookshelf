@@ -27,10 +27,7 @@ $ git clone https://github.com/MuhSyarifudin/bookshelf
 $ npm install
 
 #Run project
-$ npm run start
-
-#Or run project and watch Typescript and SCSS files
-$ npm run dev 
+$ live-server
 ```
 
 # Author

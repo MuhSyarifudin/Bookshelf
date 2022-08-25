@@ -26,8 +26,12 @@ $ git clone https://github.com/MuhSyarifudin/bookshelf
 #Install required packages
 $ npm install
 
+#install live-server
+$ npm install -g live-server
+
 #Run project
 $ live-server
+
 ```
 
 # Author
